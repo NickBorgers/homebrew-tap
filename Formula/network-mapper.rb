@@ -7,20 +7,20 @@ class NetworkMapper < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/NickBorgers/util/releases/download/v#{version}/network-mapper-darwin-arm64.tar.gz"
-      sha256 "ff04475efdbdf90119760da0a82bce351422dfb35932d5848b0cc94be64de522"
+      sha256 "PLACEHOLDER_SHA256_DARWIN_ARM64"
     else
       url "https://github.com/NickBorgers/util/releases/download/v#{version}/network-mapper-darwin-amd64.tar.gz"
-      sha256 "30b23f120b3e4f84c8c6013669f2046d7e74b68950e245c269a478316a72d041"
+      sha256 "PLACEHOLDER_SHA256_DARWIN_AMD64"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/NickBorgers/util/releases/download/v#{version}/network-mapper-linux-arm64.tar.gz"
-      sha256 "0086152a617f9d11669132a4004a93f5e093dac1a087864871fd8d33185c60ea"
+      sha256 "PLACEHOLDER_SHA256_LINUX_ARM64"
     else
       url "https://github.com/NickBorgers/util/releases/download/v#{version}/network-mapper-linux-amd64.tar.gz"
-      sha256 "13ad2150fc62d8ca9f8819fa6acc6018d12050bf60829e9d0515522d25b07424"
+      sha256 "PLACEHOLDER_SHA256_LINUX_AMD64"
     end
   end
 
