@@ -7,20 +7,20 @@ class NetworkMapper < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/NickBorgers/util/releases/download/v#{version}/network-mapper-darwin-arm64.tar.gz"
-      sha256 "/tmp/checksums/network-mapper-darwin-arm64.tar.gz.sha256:ff34bd8c8cd147b79048218fa6ae2c3d2a124a5e6cd2a9a8cd3dff93735c94aa"
+      sha256 "ff34bd8c8cd147b79048218fa6ae2c3d2a124a5e6cd2a9a8cd3dff93735c94aa"
     else
       url "https://github.com/NickBorgers/util/releases/download/v#{version}/network-mapper-darwin-amd64.tar.gz"
-      sha256 "/tmp/checksums/network-mapper-darwin-amd64.tar.gz.sha256:4838811ff487b4aab9a056f4f91c2c03ba4d0a228b40456e1c920dea452a7b95"
+      sha256 "4838811ff487b4aab9a056f4f91c2c03ba4d0a228b40456e1c920dea452a7b95"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/NickBorgers/util/releases/download/v#{version}/network-mapper-linux-arm64.tar.gz"
-      sha256 "/tmp/checksums/network-mapper-linux-arm64.tar.gz.sha256:c9bcdac619edb852e842fd4a43272c0ca632df512e3a1c6d2ed3e9ab599b4657"
+      sha256 "c9bcdac619edb852e842fd4a43272c0ca632df512e3a1c6d2ed3e9ab599b4657"
     else
       url "https://github.com/NickBorgers/util/releases/download/v#{version}/network-mapper-linux-amd64.tar.gz"
-      sha256 "/tmp/checksums/network-mapper-linux-amd64.tar.gz.sha256:ad4bc9a73c8c699e7432f2182ac26dc11749d3059105b63c1bb2ed4a81dae833"
+      sha256 "ad4bc9a73c8c699e7432f2182ac26dc11749d3059105b63c1bb2ed4a81dae833"
     end
   end
 
