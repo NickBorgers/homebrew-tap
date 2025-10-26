@@ -1,26 +1,26 @@
 class NetworkMapper < Formula
   desc "Cross-platform network discovery and visualization tool"
   homepage "https://github.com/NickBorgers/util"
-  version "2.8.3"
+  version "1.0.0-smart-crop"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/NickBorgers/util/releases/download/v#{version}/network-mapper-darwin-arm64.tar.gz"
-      sha256 "962b2e5a502ef0a0c1d0a926b29968f5e73b7b2a45c49876290c7e97b7aca3e2"
+      sha256 "ff34bd8c8cd147b79048218fa6ae2c3d2a124a5e6cd2a9a8cd3dff93735c94aa"
     else
       url "https://github.com/NickBorgers/util/releases/download/v#{version}/network-mapper-darwin-amd64.tar.gz"
-      sha256 "de82d7883912f492c20a6f0845b00f933c70ee930a0da04948e3239e300d5790"
+      sha256 "4838811ff487b4aab9a056f4f91c2c03ba4d0a228b40456e1c920dea452a7b95"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/NickBorgers/util/releases/download/v#{version}/network-mapper-linux-arm64.tar.gz"
-      sha256 "879f933d7c01249544569fce3f5e87822fa084c7f332cda4929e2e87272f983b"
+      sha256 "c9bcdac619edb852e842fd4a43272c0ca632df512e3a1c6d2ed3e9ab599b4657"
     else
       url "https://github.com/NickBorgers/util/releases/download/v#{version}/network-mapper-linux-amd64.tar.gz"
-      sha256 "ccc22a6a5d98118d34e9520d86ef8f3e98ac5f0ac493fbbde76124efe897e0c1"
+      sha256 "ad4bc9a73c8c699e7432f2182ac26dc11749d3059105b63c1bb2ed4a81dae833"
     end
   end
 
